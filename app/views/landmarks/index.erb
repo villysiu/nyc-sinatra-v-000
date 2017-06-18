@@ -1,0 +1,10 @@
+<h1> Landmarks </h1>
+  <table>
+  <tr><td>Name</td> <td>Year completed</td></tr>
+  <% @landmarks.each do |landmark| %>
+    
+    <tr><td><a href="landmarks/<%=landmark.id%>"><%=landmark.name%></a></td>
+      <td><%=landmark.year_completed%></td></tr>
+      
+  <% end %>
+</table>
